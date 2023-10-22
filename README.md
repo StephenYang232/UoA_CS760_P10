@@ -22,9 +22,13 @@ Checking the following things please:
 
 the pre-processed files are named train.csv and test.csv, run Roberta.ipynb, and a result dataset result.csv will be automatically generated.
 
-#### XLNet
+### XLNet
 
 You don't need to change the name of the data, and the result will also show in your directory
+
+### .R file
+
+Open that with R or RStudio. Just run it!
 
 ## Outcome
 
