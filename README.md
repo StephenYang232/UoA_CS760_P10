@@ -4,7 +4,8 @@ Recommender System based on Sentiment analysis
 
 ## Envernment
 
-.ipynb files can run on Google Colab directly. And .R file needs R 4.3 or higher version.
+.ipynb files can run on Google Colab directly.
+.R file needs R 4.3 or higher version. Use Install.packages("dplyr").
 
 ** You don't need to buy any plan from Colab Pro. Free is enough.
 
@@ -12,12 +13,13 @@ Recommender System based on Sentiment analysis
 
 Our data is from https://www.kaggle.com/datasets/venkatasubramanian/%73%65%6e%74%69%6d%65%6e%74-%62%61%73%65%64-%70%72%6f%64%75%63%74-%72%65%63%6f%6d%6d%65%6e%64%61%74%69%6f%6e-%73%79%73%74%65%6d/. You can re-save to your google drive from easier using.
 
+** If you want to use the R code, the Python code can give you the data needed by the R code.
+
 ## Running
 
 If you use the code on the Colab.
 Check the code Loading data part. Make sure your code can read your data correctly. And press the button on the left. That is running. Easy!
 
-Checking the following things please:
 ### Roberta
 
 the pre-processed files are named train.csv and test.csv, run Roberta.ipynb, and a result dataset result.csv will be automatically generated.
@@ -28,15 +30,15 @@ You don't need to change the name of the data, and the result will also show in 
 
 ### .R file
 
-Recommendation.R This file is used to calculate the user's recommendation list and the associated evaluation method for the recommendation list. The inputs are four files similarity_matrix.csv, data_frame.csv, similarity_matrix2.csv, data_frame2.csv. where similarity_matrix.csv is the similarity matrix file for the prediction results of the similarity_matrix2.csv is the similarity matrix file of the actual result.
-data_frame.csv is the user-product prediction record file, the
-data_frame2.csv is the actual record file of user-product. For data_frame.csv, -1 means negative, 1 means positive and 0 means not bought, the output will be for data_frame.csv the list of recommendations with accuracy and novelty.
+Open that with R or RStudio. Just run it!
+
+** Remember the data can be found in the Python code results.
 
 ## Outcome
 
 It will be shown following the code.
 
-### Roberta outcome
+### Roberta
 
 The dataset will store a column of the id and a column of the prediction results Y_pred_roberta, as well as the other two datasets trainclean.csv and testclean.csv, which are used to store the cleaned data.
 
