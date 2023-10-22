@@ -22,7 +22,7 @@ Check the code Loading data part. Make sure your code can read your data correct
 
 ### Roberta
 
-the pre-processed files are named train.csv and test.csv, run Roberta.ipynb, and a result dataset result.csv will be automatically generated.
+The original data file with csv format
 
 ### XLNet
 
@@ -40,7 +40,9 @@ It will be shown following the code.
 
 ### Roberta
 
-The dataset will store a column of the id and a column of the prediction results Y_pred_roberta, as well as the other two datasets trainclean.csv and testclean.csv, which are used to store the cleaned data.
+A result dataset result.csv, which will store one column of ids and one column of predictions Y_pred_roberta, and four other datasets train.csv and test.csv, trainclean.csv, and testclean.csv, the first two datasets store the data that are unprocessed and are only used for dividing the training and test sets, respectively. divide the data between training and test sets, and the last two datasets are used to store the cleaned training and test set data respectively
+
+
 
 ### XLNet
 
