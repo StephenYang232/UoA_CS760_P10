@@ -28,7 +28,9 @@ You don't need to change the name of the data, and the result will also show in 
 
 ### .R file
 
-Open that with R or RStudio. Just run it!
+Recommendation.R This file is used to calculate the user's recommendation list and the associated evaluation method for the recommendation list. The inputs are four files similarity_matrix.csv, data_frame.csv, similarity_matrix2.csv, data_frame2.csv. where similarity_matrix.csv is the similarity matrix file for the prediction results of the similarity_matrix2.csv is the similarity matrix file of the actual result.
+data_frame.csv is the user-product prediction record file, the
+data_frame2.csv is the actual record file of user-product. For data_frame.csv, -1 means negative, 1 means positive and 0 means not bought, the output will be for data_frame.csv the list of recommendations with accuracy and novelty.
 
 ## Outcome
 
